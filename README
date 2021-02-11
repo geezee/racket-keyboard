@@ -1,0 +1,17 @@
+Turn your QWERTY into a sensible music keyboard.
+
+Dependencies: gui/lib and rsound.
+
+Run: `racket program.rkt <root> <mode>`
+Where `root` is a musical note in all caps with `#` for sharps.
+And the mode is the mode 0-index, i.e. 0 is major scale while 5 is minor scale.
+
+There are eight columns on the keyboard that are used.
+For example the first column is the one made up of `1`, `q`, `a`, and `z`.
+Odd columns have four keys, while even columns have three (excluding the number).
+
+Every couple of columns make up 7 keys which make up the 7 keys of a diatonic scale.
+
+Therefore the first octave is accesible via 1,q,a,z,w,s,x
+While the second is accessible via 3,e,d,c,r,f,v
+etc...
